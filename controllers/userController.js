@@ -58,7 +58,7 @@ const toggleUserStatus = async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    user.isActive = !user.isActive;
+    user.isBlocked = !user.isBlocked;
 
     await user.save();
 

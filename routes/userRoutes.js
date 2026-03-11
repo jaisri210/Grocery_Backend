@@ -4,6 +4,7 @@ const {
   loginUser,
   getUserById,
   getAllUsers,
+  toggleUserStatus,
 } = require("../controllers/userController");
 const { protect, admin } = require("../middleware/authMiddleware");
 
